@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor01:;
+}
+
+::selection{
+    background-color: ;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor01);
+    padding: 40px;
+}
+
+.container{
+    max-width: 850px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 30px;
+
+}
+
+.loginform{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: blueviolet;
+}
+.container .loginform .title ::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background-color: var(--cor01);
+}
+.container .loginform .inputbox{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.container .loginform .inputbox .input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+}
