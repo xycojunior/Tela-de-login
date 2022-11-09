@@ -1,70 +1,86 @@
-*{
-    margin: 0;
+body {
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgb(108, 1, 207), rgb(1, 1, 121));
+
 }
 
-:root{
-    --cor01:;
-}
-
-::selection{
-    background-color: ;
-    color: white;
-}
-
-body{
-    min-height: 100vh;
+#login {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor01);
-    padding: 40px;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.container{
-    max-width: 850px;
-    background: white;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.445) ;
+.card {
+    background-color: rgba(19, 19, 19, 0.966);
+    padding: 50px 80px;
+    border-radius: 10px;
+    width: 400px;
+
+}
+
+.card-header {
+    text-align: center;
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.card-header::after {
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+
+}
+
+.card-content label {
+    color: white;
+    font-size: 1.3em;
+    padding-top: 10px;
+}
+
+.card-content-area {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 40px 30px;
+    flex-direction: column;
 
 }
 
-.loginform{
-    position: relative;
-    font-size: 24px;
-    font-weight: 500;
-    color: blueviolet;
-}
-.container .loginform .title ::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 25px;
-    background-color: var(--cor01);
-}
-.container .loginform .inputbox{
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    margin: 10px 0;
-    position: relative;
-}
-
-.container .loginform .inputbox .input{
-    height: 100%;
-    width: 100%;
+.card-content-area input {
+    margin-top: 15px;
+    padding: 7.5px 10px;
+    background-color: aliceblue;
+    border:none; 
+    border-bottom: 1px solid #ffffff;
+    border-radius: 3px;
     outline: none;
-    border: none;
-    padding: 0 30px;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.card-footer .submit{
+    width: 100%;
+    height: 41px;
+    background-color: #0e19bb;
+    border:none;
+    color: white;
+    margin-top: 25px;
+    border-radius: 4px ;
+}
+a {
+    font-size: 1em;
+    color: #fae207;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(4, 62, 250);
 }

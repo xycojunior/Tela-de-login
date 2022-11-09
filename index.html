@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="loginform">
-            <div class="title">Login</div>
-            <form action="#" method="post">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <div id="login">
+            <form class="card">
+                <div class="card-header">
+                    <h2>Login</h2>
+                </div>
+                <div class="card-content">
 
-                <div class="inputbox">
-                    <i class="fa fa-envelope"></i>
-                    <label for="email" >E-mail:</label>
-                    <input type="email" id="email"placeholder="Digite seu e-mail">
+                    <div class="card-content-area">
+                        <label for="usuario">Usuário:</label>
+                        <input type="text" id="usuario" placeholder="Digite seu usuário" autocomplete="off">
+
+                    </div>
+
+                    <div class="card-content-area">
+
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" placeholder="Digite sua senha"
+                        autocomplete="off">
+                        <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+                    </div>
                 </div>
-                <div>
-                    <label for="password"> Senha:</label>
-                    <input type="password" id="password" placeholder="DIgite sua senha">
-                </div>
-                <div class="fotgot"> <a href="#">Esqueceu a senha?</a> 
-                </div>
-                <div class="inputbox">
-                    <input type="submit" value="Entrar">
-                </div>
-                <div class="divider"> ou </div>
-                <div class="redessociais">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-github"></i>
-                </div>
-                <div class="sigup">
-                    Não tem uma conta?
-                    <a href="#">Crie uma agora</a>
+                <div class="card-footer">
+                    <input type="submit" value="Login" class="submit">
+                    <p>Ainda não possui cadastro? <a href="!">Cadastre-se aqui!</a></p>
                 </div>
             </form>
         </div>
-    </div>
-
-    <div class="login-img">
-        <img src="" alt="">
-    </div>
-    
-</body>
+    </body>
 </html>
